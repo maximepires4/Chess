@@ -3,27 +3,27 @@ Style pour les pièces noires.
 */
 
 .pion-noir {
-    background-image: url("../img/noir-pion.gif");
+    background-image: url("../img/noir-pion.svg");
 }
 
 .tour-noir {
-    background-image: url("../img/noir-tour.gif");
+    background-image: url("../img/noir-tour.svg");
 }
 
 .cavalier-noir {
-    background-image: url("../img/noir-cavalier.gif");
+    background-image: url("../img/noir-cavalier.svg");
 }
 
 .fou-noir {
-    background-image: url("../img/noir-fou.gif");
+    background-image: url("../img/noir-fou.svg");
 }
 
 .roi-noir {
-    background-image: url("../img/noir-roi.gif");
+    background-image: url("../img/noir-roi.svg");
 }
 
 .reine-noir {
-    background-image: url("../img/noir-reine.gif");
+    background-image: url("../img/noir-reine.svg");
 }
 
 
@@ -32,27 +32,27 @@ Style pour les pièces blanches.
 */
 
 .pion-blanc {
-    background-image: url("../img/blanc-pion.gif");
+    background-image: url("../img/blanc-pion.svg");
 }
 
 .tour-blanc {
-    background-image: url("../img/blanc-tour.gif");
+    background-image: url("../img/blanc-tour.svg");
 }
 
 .cavalier-blanc {
-    background-image: url("../img/blanc-cavalier.gif");
+    background-image: url("../img/blanc-cavalier.svg");
 }
 
 .fou-blanc {
-    background-image: url("../img/blanc-fou.gif");
+    background-image: url("../img/blanc-fou.svg");
 }
 
 .roi-blanc {
-    background-image: url("../img/blanc-roi.gif");
+    background-image: url("../img/blanc-roi.svg");
 }
 
 .reine-blanc {
-    background-image: url("../img/blanc-reine.gif");
+    background-image: url("../img/blanc-reine.svg");
 }
 
 /*
@@ -126,15 +126,19 @@ Style pour le plateau.
     height: 12.5%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 100%;
 }
 
 .selectedRed {
-    background-color: rgba(253, 0, 0, 0.25) !important;
+    background-color: rgba(255, 255, 0) !important;
+    opacity: 0.5 !important;
+    /*background-color: rgba(253, 0, 0, 0.25) !important;*/
 }
 
 .selectedBlue {
-    background-color: rgba(0, 182, 253, 0.25) !important;
+    background-color: rgba(255, 255, 0) !important;
+    opacity: 0.5;
+    /*background-color: rgba(0, 182, 253, 0.25) !important;*/
 }
 
 /*
