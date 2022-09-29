@@ -1,0 +1,191 @@
+/**
+Style pour les pièces noires.
+*/
+
+.pion-noir {
+    background-image: url("../img/noir-pion.gif");
+}
+
+.tour-noir {
+    background-image: url("../img/noir-tour.gif");
+}
+
+.cavalier-noir {
+    background-image: url("../img/noir-cavalier.gif");
+}
+
+.fou-noir {
+    background-image: url("../img/noir-fou.gif");
+}
+
+.roi-noir {
+    background-image: url("../img/noir-roi.gif");
+}
+
+.reine-noir {
+    background-image: url("../img/noir-reine.gif");
+}
+
+
+/**
+Style pour les pièces blanches.
+*/
+
+.pion-blanc {
+    background-image: url("../img/blanc-pion.gif");
+}
+
+.tour-blanc {
+    background-image: url("../img/blanc-tour.gif");
+}
+
+.cavalier-blanc {
+    background-image: url("../img/blanc-cavalier.gif");
+}
+
+.fou-blanc {
+    background-image: url("../img/blanc-fou.gif");
+}
+
+.roi-blanc {
+    background-image: url("../img/blanc-roi.gif");
+}
+
+.reine-blanc {
+    background-image: url("../img/blanc-reine.gif");
+}
+
+/*
+Style pour les éléments autour du plateau
+ */
+
+.game {
+    margin: auto;
+    background-color: aliceblue;
+    width: 480px;
+    border: 1px solid black;
+    border-radius: 1%;
+}
+
+h1, h2 {
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 32px;
+}
+
+/**
+Style pour le plateau.
+*/
+
+.plateau {
+    margin: auto;
+    border: 15px solid #1d2f6e;
+
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+
+    aspect-ratio: 1/1;
+}
+
+.plateau :nth-child(2n):nth-child(-n+8),
+.plateau :nth-child(2n+9):nth-child(-n+16),
+.plateau :nth-child(2n+18):nth-child(-n+24),
+.plateau :nth-child(2n+25):nth-child(-n+32),
+.plateau :nth-child(2n+34):nth-child(-n+40),
+.plateau :nth-child(2n+41):nth-child(-n+48),
+.plateau :nth-child(2n+50):nth-child(-n+56),
+.plateau :nth-child(2n+57) {
+    background-color: royalblue;
+}
+
+.plateau :nth-child(2n+1):nth-child(-n+8),
+.plateau :nth-child(2n+10):nth-child(-n+16),
+.plateau :nth-child(2n+17):nth-child(-n+24),
+.plateau :nth-child(2n+26):nth-child(-n+32),
+.plateau :nth-child(2n+33):nth-child(-n+40),
+.plateau :nth-child(2n+42):nth-child(-n+48),
+.plateau :nth-child(2n+49):nth-child(-n+56),
+.plateau :nth-child(2n+58) {
+    background-color: aliceblue;
+}
+
+.case {
+    width: 12.5%;
+    height: 12.5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.selectedRed {
+    background-color: rgba(253, 0, 0, 0.25) !important;
+}
+
+.selectedBlue {
+    background-color: rgba(0, 182, 253, 0.25) !important;
+}
+
+/*
+Style pour les boutons en dessous du plateau
+ */
+
+.buttons {
+    margin: auto;
+    display: flex;
+    max-width: 480px;
+    justify-content: center;
+}
+
+button {
+    background-color: royalblue;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #3556b6;
+}
+
+button:active {
+    background-color: royalblue;
+}
+
+/**
+Style pour les points symbolisant le déplacement
+ */
+.dot {
+    height: 35%;
+    width: 35%;
+    transform: translate(90%, 90%);
+}
+
+.enemy {
+    height: 75%;
+    width: 75%;
+    transform: translate(15%, 20%);
+}
+
+.enemy, .dot {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    border-radius: 50%;
+}

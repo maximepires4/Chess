@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <title>CHESS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<div>
+    <section>
+        <header>
+            <h1 style="text-align: center;">TP - CHESS - HTML&CSS&JS</h1>
+            <br>
+        </header>
+        <div class="game">
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <h1 id="blackScore"></h1>
+                        </td>
+                        <td>
+                            <h2>Black
+                                <br>
+                                <span id="piecesTaken1"></span>
+                            </h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <article class="plateau">
+            </article>
+            <div>
+                <table>
+                    <tr>
+                       <td>
+                           <h1 id="whiteScore"></h1>
+                       </td>
+                        <td>
+                            <h2>White
+                                <br>
+                                <span id="piecesTaken0"></span>
+                            </h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <footer class="buttons">
+            <button class="button" onclick="initGame(true)">Réinitialiser le jeu</button>
+            <br>
+            <button onclick="initGame(false)">Réinitialiser la grille</button>
+        </footer>
+    </section>
+</div>
+</body>
+<script src="assets/js/moteur.js"></script>
+</html>
